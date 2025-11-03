@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawid Consulting - Occupational Health &amp; Safety</title>
+    <meta name="description" content="Dawid Consulting (Pty) Ltd is a leading Occupational Health & Safety consultancy based in East London, Eastern Cape. We provide expert workplace safety solutions including risk assessments, compliance, and professional OHS training.">
+  <meta name="keywords" content="Dawid Consulting, Occupational Health and Safety, OHS Consulting, Workplace Safety, Risk Assessment, Compliance, Health and Safety Training, East London, South Africa">
+  <meta name="author" content="Dawid Consulting (Pty) Ltd">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#03A9F4">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dawid Consulting - Occupational Health & Safety Experts">
+  <meta property="og:description" content="Creating safer workplaces through professional occupational health and safety solutions across South Africa.">
+  <meta property="og:image" content="https://yourdomain.co.za/images/hero1.jpg">
+  <meta property="og:url" content="https://yourdomain.co.za/">
+  <meta property="og:site_name" content="Dawid Consulting">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dawid Consulting - Occupational Health & Safety Experts">
+  <meta name="twitter:description" content="Professional OHS solutions including audits, compliance, training, and risk management.">
+  <meta name="twitter:image" content="https://yourdomain.co.za/images/hero1.jpg">
+
+  <!-- Favicon / Browser Tab Icons -->
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+<link rel="shortcut icon" href="images/logo.png">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Dawid Consulting (Pty) Ltd",
+  "url": "https://www.dawidconsulting.co.za",
+  "logo": "https://www.dawidconsulting.co.za/images/logo.png",
+  "description": "Professional Occupational Health & Safety consultancy based in East London, Eastern Cape, providing risk assessments, audits, and training.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11 Bellavista Avenue Cambridge",
+    "addressLocality": "East London",
+    "addressRegion": "Eastern Cape",
+    "addressCountry": "South Africa"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+27 78 567 3301",
+    "contactType": "Customer Service",
+    "areaServed": "ZA",
+    "availableLanguage": "en"
+  }
+}
+</script>
+
+
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #263238 0%, #03A9F4 100%);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .icon-bg {
+            background: linear-gradient(135deg, #E53935, #ff6b6b);
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        /* Hero Slideshow Animations */
+        .hero-slide.active {
+            opacity: 1;
+        }
+        
+        .slide-indicator.active {
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: scale(1.2);
+        }
+        
+        /* Floating Particles */
+        @keyframes float-1 {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            25% { transform: translateY(-20px) translateX(10px); }
+            50% { transform: translateY(-10px) translateX(-15px); }
+            75% { transform: translateY(-30px) translateX(5px); }
+        }
+        
+        @keyframes float-2 {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            33% { transform: translateY(-15px) translateX(-10px); }
+            66% { transform: translateY(-25px) translateX(20px); }
+        }
+        
+        @keyframes float-3 {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(-40px) translateX(-20px); }
+        }
+        
+        @keyframes float-4 {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            25% { transform: translateY(-10px) translateX(-5px); }
+            75% { transform: translateY(-20px) translateX(15px); }
+        }
+        
+        .animate-float-1 { animation: float-1 6s ease-in-out infinite; }
+        .animate-float-2 { animation: float-2 8s ease-in-out infinite; }
+        .animate-float-3 { animation: float-3 10s ease-in-out infinite; }
+        .animate-float-4 { animation: float-4 7s ease-in-out infinite; }
+        
+        /* Content Slide Animations */
+        @keyframes slide-up {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-slide-up { animation: slide-up 1s ease-out; }
+        .animate-slide-up-delay-1 { animation: slide-up 1s ease-out 0.2s both; }
+        .animate-slide-up-delay-2 { animation: slide-up 1s ease-out 0.4s both; }
+        .animate-slide-up-delay-3 { animation: slide-up 1s ease-out 0.6s both; }
+        
+        /* Pulse Animation */
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .animate-pulse-slow { animation: pulse-slow 3s ease-in-out infinite; }
+        
+        /* Floating Shapes */
+        @keyframes float-slow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        @keyframes float-reverse {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(20px) rotate(-180deg); }
+        }
+        
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
+        .animate-float-reverse { animation: float-reverse 6s ease-in-out infinite; }
+        .animate-bounce-slow { animation: bounce-slow 4s ease-in-out infinite; }
+        
+        /* Expand Animation */
+        @keyframes expand {
+            from { width: 0; }
+            to { width: 6rem; }
+        }
+        
+        .animate-expand { animation: expand 1s ease-out 0.5s both; }
+        
+        /* Bounce In Animation */
+        @keyframes bounce-in {
+            0% { opacity: 0; transform: scale(0.3); }
+            50% { opacity: 1; transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        
+        .animate-bounce-in { animation: bounce-in 0.6s ease-out; }
+        
+        /* Grid Movement */
+        @keyframes grid-move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(40px, 40px); }
+        }
+        
+        /* Slide In Animations */
+        @keyframes slide-in-left {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes slide-in-right {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .animate-slide-in-left { animation: slide-in-left 0.8s ease-out; }
+        .animate-slide-in-right { animation: slide-in-right 0.8s ease-out; }
+        
+        /* Fade In Animation */
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in { animation: fade-in 0.6s ease-out; }
+        
+        /* Dots Movement */
+        @keyframes dots-move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(30px, 30px); }
+        }
+        
+        /* Scroll Animation Observer */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Particle Positioning */
+        .particle:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+        .particle:nth-child(2) { top: 60%; left: 80%; animation-delay: 2s; }
+        .particle:nth-child(3) { top: 80%; left: 20%; animation-delay: 4s; }
+        .particle:nth-child(4) { top: 40%; left: 70%; animation-delay: 1s; }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="scroll-smooth"><!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 shadow-lg backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <!-- Logo -->
+      <div class="flex items-center flex-shrink-0 space-x-4">
+        <img src="images/logo.png" alt="Dawid Consulting Logo" class="h-14 md:h-16 w-auto object-contain">
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-4">
+          <a href="#home" class="text-white hover:text-blue-200 px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white hover:bg-opacity-10">Home</a>
+          <a href="about.html" class="text-white hover:text-blue-200 px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white hover:bg-opacity-10">About</a>
+          <a href="services.html" class="text-white hover:text-blue-200 px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white hover:bg-opacity-10">Services</a>
+          <a href="contact.html" class="text-white hover:text-blue-200 px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white hover:bg-opacity-10">Contact</a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white hover:text-blue-200 focus:outline-none focus:text-blue-200 transition-colors duration-300">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Sidebar Menu -->
+<div id="mobile-sidebar" class="fixed inset-y-0 left-0 z-50 w-64 bg-gradient-to-b from-gray-900 via-blue-900 to-gray-800 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+  <div class="flex items-center justify-between p-4 border-b border-white border-opacity-20">
+    <h2 class="text-lg font-semibold text-white">Menu</h2>
+    <button id="close-sidebar" class="text-white hover:text-blue-200 focus:outline-none transition-colors duration-300">
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <nav class="mt-8">
+    <div class="px-4 space-y-2">
+      <a href="#home" class="mobile-nav-link block px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 rounded-lg transition-all duration-300 transform hover:translate-x-2">
+        <div class="flex items-center">
+          <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z"/></svg> Home
+        </div>
+      </a>
+
+      <a href="about.html" class="mobile-nav-link block px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 rounded-lg transition-all duration-300 transform hover:translate-x-2">
+        <div class="flex items-center">
+          <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"/></svg> About
+        </div>
+      </a>
+
+      <a href="services.html" class="mobile-nav-link block px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 rounded-lg transition-all duration-300 transform hover:translate-x-2">
+        <div class="flex items-center">
+          <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L3.09 8.26L12 14L20.91 8.26L12 2ZM21 16V10L12 15L3 10V16L12 21L21 16Z"/></svg> Services
+        </div>
+      </a>
+
+      <a href="contact.html" class="mobile-nav-link block px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 rounded-lg transition-all duration-300 transform hover:translate-x-2">
+        <div class="flex items-center">
+          <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/></svg> Contact
+        </div>
+      </a>
+    </div>
+  </nav>
+</div>
+
+  <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden md:hidden"></div><!-- Hero Section -->
+  <section id="home" class="relative min-h-screen overflow-hidden"><!-- Background Slideshow -->
+   <div class="absolute inset-0">
+    <div class="hero-slide active absolute inset-0 bg-cover bg-center transition-opacity duration-1000" style="background-image: linear-gradient(rgba(38, 50, 56, 0.7), rgba(3, 169, 244, 0.7)), url('images/hero1.jpg')"></div>
+    <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: linear-gradient(rgba(38, 50, 56, 0.7), rgba(3, 169, 244, 0.7)), url('images/hero2.jpg')"></div>
+    <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: linear-gradient(rgba(38, 50, 56, 0.7), rgba(3, 169, 244, 0.7)), url('images/hero3.jpg')"></div>
+   </div><!-- Floating Particles -->
+   <div class="absolute inset-0 overflow-hidden">
+    <div class="particle absolute w-2 h-2 bg-white rounded-full opacity-20 animate-float-1"></div>
+    <div class="particle absolute w-1 h-1 bg-blue-200 rounded-full opacity-30 animate-float-2"></div>
+    <div class="particle absolute w-3 h-3 bg-white rounded-full opacity-10 animate-float-3"></div>
+    <div class="particle absolute w-1 h-1 bg-blue-100 rounded-full opacity-40 animate-float-4"></div>
+   </div><!-- Content -->
+   <div class="relative z-10 min-h-screen flex items-center justify-center text-white">
+    <div class="max-w-4xl mx-auto text-center px-4">
+     <div class="mb-8 animate-slide-up">
+<div class="mx-auto mb-6 flex items-center justify-center animate-pulse-slow">
+  <img src="images/herologo.png" alt="Logo" style="height: 90px; width: auto;">
+</div>
+
+      <h1 id="hero-company-name" class="text-5xl md:text-6xl font-bold mb-4 animate-slide-up-delay-1">Dawid Consulting</h1>
+      <p id="hero-tagline" class="text-xl md:text-2xl mb-8 text-blue-100 animate-slide-up-delay-2">Professional Occupational Health &amp; Safety Solutions</p>
+     </div>
+     <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up-delay-3"><a href="#services" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">Our Services</a> <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-gray-800 px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">Get In Touch</a>
+     </div>
+    </div>
+   </div><!-- Slide Indicators -->
+   <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20"><button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-80 transition-all duration-300 active"></button> <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-80 transition-all duration-300"></button> <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-80 transition-all duration-300"></button>
+   </div>
+  </section><!-- About Section -->
+  <section id="about" class="relative py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-gray-100 overflow-hidden"><!-- Floating Geometric Shapes -->
+   <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-float-slow"></div>
+    <div class="absolute top-40 right-20 w-16 h-16 bg-red-200 rotate-45 opacity-15 animate-float-reverse"></div>
+    <div class="absolute bottom-20 left-1/4 w-12 h-12 bg-blue-300 rounded-full opacity-25 animate-bounce-slow"></div>
+    <div class="absolute bottom-40 right-1/3 w-8 h-8 bg-red-300 rotate-12 opacity-20 animate-pulse-slow"></div>
+   </div>
+   <div class="relative z-10 max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16 animate-on-scroll">
+     <h2 id="about-title" class="text-4xl font-bold text-gray-800 mb-6">About Dawid Consulting</h2>
+     <div class="w-24 h-1 bg-red-600 mx-auto mb-8 animate-expand"></div>
+     <p id="about-description" class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">Dawid Consulting (Pty) Ltd is a leading occupational health and safety consultancy firm dedicated to creating safer work environments. With extensive expertise in risk assessment, compliance, and safety management, we help organizations protect their most valuable asset - their people.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+     <div class="text-center animate-on-scroll" style="animation-delay: 0.2s">
+      <div class="icon-bg w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform duration-300 animate-bounce-in">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Expert Compliance</h3>
+      <p class="text-gray-600">Ensuring your organization meets all OHS regulatory requirements</p>
+     </div>
+     <div class="text-center animate-on-scroll" style="animation-delay: 0.4s">
+      <div class="icon-bg w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform duration-300 animate-bounce-in">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2L3.09 8.26L12 14L20.91 8.26L12 2ZM21 16V10L12 15L3 10V16L12 21L21 16Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Risk Management</h3>
+      <p class="text-gray-600">Comprehensive risk assessments and mitigation strategies</p>
+     </div>
+     <div class="text-center animate-on-scroll" style="animation-delay: 0.6s">
+      <div class="icon-bg w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform duration-300 animate-bounce-in">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Training &amp; Development</h3>
+      <p class="text-gray-600">Professional training programs for safety representatives</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Services Section -->
+  <section id="services" class="relative py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 overflow-hidden"><!-- Animated Grid Background -->
+   <div class="absolute inset-0 opacity-10">
+    <div class="grid-pattern absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0); background-size: 40px 40px; animation: grid-move 20s linear infinite;"></div>
+   </div><!-- Background Image -->
+   <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('images/services.jpg')"></div>
+   <div class="relative z-10 max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16 animate-on-scroll">
+     <h2 id="services-title" class="text-4xl font-bold text-white mb-6">Our Services</h2>
+     <div class="w-24 h-1 bg-red-500 mx-auto mb-8 animate-expand"></div>
+     <p class="text-lg text-blue-100 max-w-3xl mx-auto">Comprehensive occupational health and safety solutions tailored to your organization's needs</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="service-card glass-card bg-gray-800 bg-opacity-90 backdrop-blur-lg border border-gray-600 border-opacity-50 p-6 rounded-xl hover:bg-opacity-100 transition-all duration-300 transform hover:scale-105 hover:rotate-1 animate-on-scroll">
+      <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+       <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M9 11H7V9H9V11ZM13 11H11V9H13V11ZM17 11H15V9H17V11ZM19 3H18V1H16V3H8V1H6V3H5C3.89 3 3.01 3.9 3.01 5L3 19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V8H19V19Z" />
+       </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-white mb-2">Baseline Risk Assessment</h3>
+      <p class="text-gray-200 text-sm">Comprehensive evaluation of workplace hazards and risks</p>
+     </div>
+     <div class="service-card glass-card bg-gray-800 bg-opacity-90 backdrop-blur-lg border border-gray-600 border-opacity-50 p-6 rounded-xl hover:bg-opacity-100 transition-all duration-300 transform hover:scale-105 hover:rotate-1 animate-on-scroll" style="animation-delay: 0.1s">
+      <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+       <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M11.8 10.9C9.53 10.31 8.8 9.7 8.8 8.75C8.8 7.66 9.81 6.9 11.5 6.9C13.28 6.9 13.94 7.75 14 9H16.21C16.14 7.28 15.09 5.7 13 5.19V3H10V5.16C8.06 5.58 6.5 6.84 6.5 8.77C6.5 11.08 8.41 12.23 11.2 12.9C13.7 13.5 14.2 14.38 14.2 15.31C14.2 16 13.71 17.1 11.5 17.1C9.44 17.1 8.63 16.18 8.5 15H6.32C6.44 17.19 8.08 18.42 10 18.83V21H13V18.85C14.95 18.5 16.5 17.35 16.5 15.3C16.5 12.46 14.07 11.5 11.8 10.9Z" />
+       </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-white mb-2">Costing and Budgeting</h3>
+      <p class="text-gray-200 text-sm">Strategic financial planning for safety initiatives</p>
+     </div>
+     <div class="service-card glass-card bg-gray-800 bg-opacity-90 backdrop-blur-lg border border-gray-600 border-opacity-50 p-6 rounded-xl hover:bg-opacity-100 transition-all duration-300 transform hover:scale-105 hover:rotate-1 animate-on-scroll" style="animation-delay: 0.2s">
+      <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+       <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M14 2H6C4.9 2 4.01 2.9 4.01 4L4 20C4 21.1 4.89 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" />
+       </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-white mb-2">OHS Specifications Development</h3>
+      <p class="text-gray-200 text-sm">Custom safety specifications for client requirements</p>
+     </div>
+     <div class="service-card glass-card bg-gray-800 bg-opacity-90 backdrop-blur-lg border border-gray-600 border-opacity-50 p-6 rounded-xl hover:bg-opacity-100 transition-all duration-300 transform hover:scale-105 hover:rotate-1 animate-on-scroll" style="animation-delay: 0.3s">
+      <div class="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+       <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" />
+       </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-white mb-2">Safety Plan Approval</h3>
+      <p class="text-gray-200 text-sm">Review and approval of contractor health and safety plans</p>
+     </div>
+     <div class="service-card glass-card bg-gray-800 bg-opacity-90 backdrop-blur-lg border border-gray-600 border-opacity-50 p-6 rounded-xl hover:bg-opacity-100 transition-all duration-300 transform hover:scale-105 hover:rotate-1 animate-on-scroll" style="animation-delay: 0.4s">
+      <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+       <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM17 12H7V10H17V12Z" />
+       </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-white mb-2">Monthly Site Audits</h3>
+      <p class="text-gray-200 text-sm">Regular site inspections and comprehensive reporting</p>
+     </div>
+     <div class="service-card glass-card bg-gray-800 bg-opacity-90 backdrop-blur-lg border border-gray-600 border-opacity-50 p-6 rounded-xl hover:bg-opacity-100 transition-all duration-300 transform hover:scale-105 hover:rotate-1 animate-on-scroll" style="animation-delay: 0.5s">
+      <div class="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+       <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" />
+       </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-white mb-2">Incident Investigations</h3>
+      <p class="text-gray-200 text-sm">Thorough investigation and analysis of workplace incidents</p>
+     </div>
+     <div class="service-card glass-card bg-gray-800 bg-opacity-90 backdrop-blur-lg border border-gray-600 border-opacity-50 p-6 rounded-xl hover:bg-opacity-100 transition-all duration-300 transform hover:scale-105 hover:rotate-1 animate-on-scroll" style="animation-delay: 0.6s">
+      <div class="w-12 h-12 bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+       <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2L2 7L12 12L22 7L12 2ZM2 17L12 22L22 17L12 12L2 17Z" />
+       </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-white mb-2">Training Programs</h3>
+      <p class="text-gray-200 text-sm">Induction and health &amp; safety representative training</p>
+     </div>
+     <div class="service-card glass-card bg-gray-800 bg-opacity-90 backdrop-blur-lg border border-gray-600 border-opacity-50 p-6 rounded-xl hover:bg-opacity-100 transition-all duration-300 transform hover:scale-105 hover:rotate-1 animate-on-scroll" style="animation-delay: 0.7s">
+      <div class="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+       <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M20 6H16L14 4H10L8 6H4C2.9 6 2 6.9 2 8V19C2 20.1 2.9 21 4 21H20C21.1 21 22 19.1 22 19V8C22 6.9 21.1 6 20 6ZM20 19H4V8H20V19ZM12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z" />
+       </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-white mb-2">Fall Protection Plans</h3>
+      <p class="text-gray-200 text-sm">Specialized fall protection planning and implementation</p>
+     </div>
+     <div class="service-card glass-card bg-gray-800 bg-opacity-90 backdrop-blur-lg border border-gray-600 border-opacity-50 p-6 rounded-xl hover:bg-opacity-100 transition-all duration-300 transform hover:scale-105 hover:rotate-1 animate-on-scroll" style="animation-delay: 0.8s">
+      <div class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+       <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" />
+       </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-white mb-2">PPE Supply</h3>
+      <p class="text-gray-200 text-sm">Supply of personal protective equipment and clothing</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Why Choose Us Section -->
+  <section class="relative py-20 bg-gradient-to-br from-white via-gray-50 to-blue-50 overflow-hidden"><!-- Hexagon Pattern Background -->
+   <div class="absolute inset-0 opacity-5">
+    <div class="hexagon-pattern absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width=\" 60\ height="\&quot;60\&quot;" viewbox="\&quot;0" 0 60 xmlns="\&quot;http://www.w3.org/2000/svg\&quot;">
+     <g fill="\&quot;none\&quot;" fill-rule="\&quot;evenodd\&quot;">
+      <g fill="\&quot;%23000000\&quot;" fill-opacity="\&quot;0.1\&quot;">
+       <polygon points="\&quot;30,0" 52,15 52,45 30,60 8,45 8,15\ />
+      </g>
+     </g>'); background-size: 60px 60px;"&gt;
+    </div>
+   </div><!-- Background Image -->
+   <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('images/hero1.jpg')"></div><!-- Floating Icons -->
+   <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-20 left-20 w-16 h-16 bg-blue-200 rounded-full opacity-20 flex items-center justify-center animate-float-slow">
+     <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z" />
+     </svg>
+    </div>
+    <div class="absolute top-40 right-16 w-12 h-12 bg-red-200 rounded-full opacity-25 flex items-center justify-center animate-bounce-slow">
+     <svg class="w-6 h-6 text-red-600" fill="currentColor" viewbox="0 0 24 24"><path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" />
+     </svg>
+    </div>
+    <div class="absolute bottom-32 left-1/4 w-14 h-14 bg-green-200 rounded-full opacity-15 flex items-center justify-center animate-pulse-slow">
+     <svg class="w-7 h-7 text-green-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2L3.09 8.26L12 14L20.91 8.26L12 2Z" />
+     </svg>
+    </div>
+   </div>
+   <div class="relative z-10 max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16 animate-on-scroll">
+     <h2 id="why-choose-title" class="text-4xl font-bold text-gray-800 mb-6">Why Choose Dawid Consulting</h2>
+     <div class="w-24 h-1 bg-red-600 mx-auto mb-8 animate-expand"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+     <div class="animate-on-scroll">
+      <div class="space-y-6">
+       <div class="flex items-start animate-slide-in-left" style="animation-delay: 0.1s">
+        <div class="flex-shrink-0 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center mr-4 animate-pulse-slow">
+         <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" />
+         </svg>
+        </div>
+        <div>
+         <h3 class="text-lg font-semibold text-gray-800 mb-2">Proven Expertise</h3>
+         <p class="text-gray-600">Years of experience in occupational health and safety consulting across various industries</p>
+        </div>
+       </div>
+       <div class="flex items-start animate-slide-in-left" style="animation-delay: 0.2s">
+        <div class="flex-shrink-0 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center mr-4 animate-pulse-slow">
+         <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" />
+         </svg>
+        </div>
+        <div>
+         <h3 class="text-lg font-semibold text-gray-800 mb-2">Comprehensive Solutions</h3>
+         <p class="text-gray-600">Full-service approach covering all aspects of workplace safety and compliance</p>
+        </div>
+       </div>
+       <div class="flex items-start animate-slide-in-left" style="animation-delay: 0.3s">
+        <div class="flex-shrink-0 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center mr-4 animate-pulse-slow">
+         <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" />
+         </svg>
+        </div>
+        <div>
+         <h3 class="text-lg font-semibold text-gray-800 mb-2">Professional Leadership</h3>
+         <p class="text-gray-600">Led by experienced director Thabang Nkomo with deep industry knowledge</p>
+        </div>
+       </div>
+       <div class="flex items-start animate-slide-in-left" style="animation-delay: 0.4s">
+        <div class="flex-shrink-0 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center mr-4 animate-pulse-slow">
+         <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" />
+         </svg>
+        </div>
+        <div>
+         <h3 class="text-lg font-semibold text-gray-800 mb-2">Local Presence</h3>
+         <p class="text-gray-600">Based in East London, Eastern Cape, with deep understanding of local regulations</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="text-center animate-on-scroll animate-slide-in-right">
+      <div class="bg-white bg-opacity-80 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-white border-opacity-50 transform hover:scale-105 transition-all duration-300">
+       <div class="w-24 h-24 bg-gradient-to-br from-red-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-slow shadow-lg">
+        <svg class="w-12 h-12 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" />
+        </svg>
+       </div>
+       <h3 class="text-2xl font-bold text-gray-800 mb-4">Your Safety Partner</h3>
+       <p class="text-gray-600 mb-6">Committed to creating safer workplaces through professional expertise and dedicated service</p><a href="#contact" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">Get Started Today</a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Contact Section -->
+  <section id="contact" class="relative py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 overflow-hidden"><!-- Animated Dots Pattern -->
+   <div class="absolute inset-0 opacity-20">
+    <div class="dots-pattern absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.3) 1px, transparent 0); background-size: 30px 30px; animation: dots-move 15s linear infinite;"></div>
+   </div><!-- Background Image -->
+   <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('images/contact.jpg')"></div>
+   <div class="relative z-10 max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16 animate-on-scroll">
+     <h2 id="contact-title" class="text-4xl font-bold text-white mb-6">Contact Us</h2>
+     <div class="w-24 h-1 bg-red-500 mx-auto mb-8 animate-expand"></div>
+     <p class="text-lg text-blue-100">Ready to enhance your workplace safety? Get in touch with our team today</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12">
+     <div class="animate-on-scroll animate-slide-in-left">
+      <h3 class="text-2xl font-semibold text-white mb-6">Get In Touch</h3>
+      <div class="space-y-6">
+       <div class="flex items-center animate-fade-in" style="animation-delay: 0.1s">
+        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center mr-4 shadow-lg">
+         <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" />
+         </svg>
+        </div>
+        <div>
+         <h4 class="font-semibold text-white">Phone</h4>
+         <p id="contact-phone" class="text-blue-200">078 567 3301</p>
+        </div>
+       </div>
+       <div class="flex items-center animate-fade-in" style="animation-delay: 0.2s">
+        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-700 rounded-lg flex items-center justify-center mr-4 shadow-lg">
+         <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5S14.5 7.62 14.5 9S13.38 11.5 12 11.5Z" />
+         </svg>
+        </div>
+        <div>
+         <h4 class="font-semibold text-white">Address</h4>
+         <p id="contact-address" class="text-blue-200">11 Bellavista Avenue Cambridge<br>
+          East London, Eastern Cape</p>
+        </div>
+       </div>
+       <div class="flex items-center animate-fade-in" style="animation-delay: 0.3s">
+        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg flex items-center justify-center mr-4 shadow-lg">
+         <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" />
+         </svg>
+        </div>
+        <div>
+         <h4 class="font-semibold text-white">Director</h4>
+         <p id="contact-director" class="text-blue-200">Thabang Nkomo</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="animate-on-scroll animate-slide-in-right">
+      <div class="bg-gray-800 bg-opacity-95 backdrop-blur-lg border border-gray-600 border-opacity-50 p-8 rounded-2xl shadow-2xl">
+       <h3 class="text-2xl font-semibold text-white mb-6">Send us a Message</h3>
+       <form class="space-y-4">
+        <div><label for="name" class="block text-sm font-medium text-gray-200 mb-1">Name</label> <input type="text" id="name" name="name" class="w-full px-3 py-2 bg-gray-700 bg-opacity-80 border border-gray-500 border-opacity-50 rounded-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-opacity-90 transition-all" placeholder="Your full name" required>
+        </div>
+        <div><label for="email" class="block text-sm font-medium text-gray-200 mb-1">Email</label> <input type="email" id="email" name="email" class="w-full px-3 py-2 bg-gray-700 bg-opacity-80 border border-gray-500 border-opacity-50 rounded-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-opacity-90 transition-all" placeholder="your.email@company.com" required>
+        </div>
+        <div><label for="company" class="block text-sm font-medium text-gray-200 mb-1">Company</label> <input type="text" id="company" name="company" class="w-full px-3 py-2 bg-gray-700 bg-opacity-80 border border-gray-500 border-opacity-50 rounded-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-opacity-90 transition-all" placeholder="Your company name">
+        </div>
+        <div><label for="message" class="block text-sm font-medium text-gray-200 mb-1">Message</label> <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 bg-gray-700 bg-opacity-80 border border-gray-500 border-opacity-50 rounded-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-opacity-90 transition-all resize-none" placeholder="Tell us about your safety requirements..." required></textarea>
+        </div><button type="submit" class="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white py-3 px-4 rounded-md font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">Send Message</button>
+       </form>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+   <div class="max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-4 gap-8">
+      <div>
+      <h3 class="text-2xl font-bold mb-4">Dawid Consulting (Pty) Ltd</h3>
+      <p class="text-gray-300 mb-4">Your trusted partner in occupational health and safety. Creating safer work environments for a better tomorrow.</p>
+      <div class="flex space-x-4"><a href="tel:0785673301" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" />
+        </svg></a> <a href="mailto:info@davidconsulting.co.za" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" />
+        </svg></a> <a href="https://wa.me/27785673301" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488" />
+        </svg></a>
+      </div>
+     </div>
+     <div>
+      <h4 class="text-lg font-semibold mb-4">Services</h4>
+      <ul class="space-y-2 text-gray-300">
+       <li>Risk Assessment</li>
+       <li>Safety Planning</li>
+       <li>Training Programs</li>
+       <li>Site Auditing</li>
+       <li>PPE Supply</li>
+      </ul>
+     </div>
+          <div>
+      <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+       <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+       <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+       <li><a href="services.html" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+       <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="text-xl font-semibold mb-4">Contact Info</h4>
+      <div class="space-y-2 text-gray-300">
+       <p>📞 078 567 3301</p>
+       <p>✉️ info@davidconsulting.co.za</p>
+       <p>📍 11 Bellavista Avenue Cambridge</p>
+       <p>🕒 Mon-Fri: 8AM-5PM</p>
+      </div>
+     </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+     <p class="text-gray-300">© 2024 Dawid Consulting (Pty) Ltd. All rights reserved.</p>
+    </div>
+   </div>
+  </footer>
+  <script>
+        // Default configuration
+        const defaultConfig = {
+            company_name: "Dawid Consulting (Pty) Ltd",
+            tagline: "Professional Occupational Health & Safety Solutions",
+            about_title: "About Dawid Consulting",
+            about_description: "Dawid Consulting (Pty) Ltd is a leading occupational health and safety consultancy firm dedicated to creating safer work environments. With extensive expertise in risk assessment, compliance, and safety management, we help organizations protect their most valuable asset - their people.",
+            services_title: "Our Services",
+            why_choose_title: "Why Choose Dawid Consulting",
+            contact_title: "Contact Us",
+            director_name: "Thabang Nkomo",
+            phone_number: "078 567 3301",
+            address: "11 Bellavista Avenue Cambridge, East London, Eastern Cape",
+            background_color: "#f8fafc",
+            surface_color: "#ffffff",
+            text_color: "#1f2937",
+            primary_action_color: "#E53935",
+            secondary_action_color: "#03A9F4",
+            font_family: "Inter",
+            font_size: 16
+        };
+
+        // Configuration update function
+        async function onConfigChange(config) {
+            const customFont = config.font_family || defaultConfig.font_family;
+            const baseFontStack = 'system-ui, -apple-system, sans-serif';
+            const baseSize = config.font_size || defaultConfig.font_size;
+            
+            // Apply font family to primary text elements
+            const fontElements = [
+                'nav-company-name', 'hero-company-name', 'hero-tagline',
+                'about-title', 'about-description', 'services-title',
+                'why-choose-title', 'contact-title', 'footer-company-name'
+            ];
+            
+            fontElements.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.style.fontFamily = `${customFont}, ${baseFontStack}`;
+                }
+            });
+            
+            // Apply font sizes proportionally
+            const titleElements = document.querySelectorAll('h1, h2');
+            titleElements.forEach(el => {
+                el.style.fontSize = `${baseSize * 2}px`;
+            });
+            
+            const subtitleElements = document.querySelectorAll('h3');
+            subtitleElements.forEach(el => {
+                el.style.fontSize = `${baseSize * 1.25}px`;
+            });
+            
+            const bodyElements = document.querySelectorAll('p, li, label, input, textarea, button');
+            bodyElements.forEach(el => {
+                el.style.fontSize = `${baseSize}px`;
+            });
+            
+            // Apply colors with proper contrast
+            document.body.style.backgroundColor = config.background_color || defaultConfig.background_color;
+            
+            // Ensure text is always visible with proper contrast
+            const textColor = config.text_color || defaultConfig.text_color;
+            
+            // About section text (dark background needs light text)
+            const aboutTextElements = document.querySelectorAll('#about h2, #about h3, #about p');
+            aboutTextElements.forEach(el => {
+                el.style.color = textColor;
+            });
+            
+            // Services section - force white text on dark background
+            const servicesTextElements = document.querySelectorAll('#services h2, #services h3, #services p');
+            servicesTextElements.forEach(el => {
+                el.style.color = '#ffffff !important';
+            });
+            
+            // Why Choose section text
+            const whyChooseTextElements = document.querySelectorAll('#why-choose h2, #why-choose h3, #why-choose p');
+            whyChooseTextElements.forEach(el => {
+                el.style.color = textColor;
+            });
+            
+            // Contact section - force white text on dark background
+            const contactTextElements = document.querySelectorAll('#contact h2, #contact h3, #contact h4, #contact p, #contact label');
+            contactTextElements.forEach(el => {
+                el.style.color = '#ffffff !important';
+            });
+            
+            // Footer - force white text
+            const footerTextElements = document.querySelectorAll('footer h3, footer h4, footer p, footer li, footer a');
+            footerTextElements.forEach(el => {
+                el.style.color = '#ffffff !important';
+            });
+            
+            const surfaceElements = document.querySelectorAll('.bg-white, .bg-gray-50');
+            surfaceElements.forEach(el => {
+                el.style.backgroundColor = config.surface_color || defaultConfig.surface_color;
+            });
+            
+            const primaryButtons = document.querySelectorAll('.bg-red-600, .icon-bg');
+            primaryButtons.forEach(el => {
+                el.style.backgroundColor = config.primary_action_color || defaultConfig.primary_action_color;
+            });
+            
+            const secondaryElements = document.querySelectorAll('.bg-blue-100, .text-blue-600');
+            secondaryElements.forEach(el => {
+                if (el.classList.contains('bg-blue-100')) {
+                    el.style.backgroundColor = config.secondary_action_color + '20' || defaultConfig.secondary_action_color + '20';
+                } else {
+                    el.style.color = config.secondary_action_color || defaultConfig.secondary_action_color;
+                }
+            });
+            
+            // Update text content
+            const textUpdates = {
+                'nav-company-name': config.company_name || defaultConfig.company_name,
+                'hero-company-name': config.company_name || defaultConfig.company_name,
+                'hero-tagline': config.tagline || defaultConfig.tagline,
+                'about-title': config.about_title || defaultConfig.about_title,
+                'about-description': config.about_description || defaultConfig.about_description,
+                'services-title': config.services_title || defaultConfig.services_title,
+                'why-choose-title': config.why_choose_title || defaultConfig.why_choose_title,
+                'contact-title': config.contact_title || defaultConfig.contact_title,
+                'contact-director': config.director_name || defaultConfig.director_name,
+                'contact-phone': config.phone_number || defaultConfig.phone_number,
+                'contact-address': config.address || defaultConfig.address,
+                'footer-company-name': config.company_name || defaultConfig.company_name
+            };
+            
+            Object.entries(textUpdates).forEach(([id, text]) => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.textContent = text;
+                }
+            });
+        }
+
+        // Capabilities mapping
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.background_color || defaultConfig.background_color,
+                        set: (value) => {
+                            config.background_color = value;
+                            window.elementSdk.setConfig({ background_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.surface_color || defaultConfig.surface_color,
+                        set: (value) => {
+                            config.surface_color = value;
+                            window.elementSdk.setConfig({ surface_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.text_color || defaultConfig.text_color,
+                        set: (value) => {
+                            config.text_color = value;
+                            window.elementSdk.setConfig({ text_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.primary_action_color || defaultConfig.primary_action_color,
+                        set: (value) => {
+                            config.primary_action_color = value;
+                            window.elementSdk.setConfig({ primary_action_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+                        set: (value) => {
+                            config.secondary_action_color = value;
+                            window.elementSdk.setConfig({ secondary_action_color: value });
+                        }
+                    }
+                ],
+                borderables: [],
+                fontEditable: {
+                    get: () => config.font_family || defaultConfig.font_family,
+                    set: (value) => {
+                        config.font_family = value;
+                        window.elementSdk.setConfig({ font_family: value });
+                    }
+                },
+                fontSizeable: {
+                    get: () => config.font_size || defaultConfig.font_size,
+                    set: (value) => {
+                        config.font_size = value;
+                        window.elementSdk.setConfig({ font_size: value });
+                    }
+                }
+            };
+        }
+
+        // Edit panel values mapping
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["company_name", config.company_name || defaultConfig.company_name],
+                ["tagline", config.tagline || defaultConfig.tagline],
+                ["about_title", config.about_title || defaultConfig.about_title],
+                ["about_description", config.about_description || defaultConfig.about_description],
+                ["services_title", config.services_title || defaultConfig.services_title],
+                ["why_choose_title", config.why_choose_title || defaultConfig.why_choose_title],
+                ["contact_title", config.contact_title || defaultConfig.contact_title],
+                ["director_name", config.director_name || defaultConfig.director_name],
+                ["phone_number", config.phone_number || defaultConfig.phone_number],
+                ["address", config.address || defaultConfig.address]
+            ]);
+        }
+
+        // Hero slideshow functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const indicators = document.querySelectorAll('.slide-indicator');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === index);
+            });
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        
+        // Auto-advance slides
+        setInterval(nextSlide, 5000);
+        
+        // Manual slide control
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+        
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for scroll animations
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Parallax effect for background images
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('[style*="background-attachment: fixed"]');
+            
+            parallaxElements.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+        
+        // Add stagger animation to service cards
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        // Form submission handler - Send via WhatsApp
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const company = formData.get('company') || 'Not specified';
+            const message = formData.get('message');
+            
+            // Create WhatsApp message
+            const whatsappMessage = `*New Contact Form Submission*%0A%0A` +
+                `*Name:* ${name}%0A` +
+                `*Email:* ${email}%0A` +
+                `*Company:* ${company}%0A%0A` +
+                `*Message:*%0A${message}%0A%0A` +
+                `_Sent from Dawid Consulting website_`;
+            
+            // WhatsApp URL with South African number
+            const whatsappURL = `https://wa.me/27785673301?text=${whatsappMessage}`;
+            
+            // Show sending message
+            const button = this.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            button.textContent = 'Opening WhatsApp...';
+            button.style.backgroundColor = '#25D366';
+            
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank', 'noopener,noreferrer');
+            
+            // Reset form
+            this.reset();
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.backgroundColor = '';
+            }, 3000);
+        });
+
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileSidebar = document.getElementById('mobile-sidebar');
+        const closeSidebar = document.getElementById('close-sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function openMobileMenu() {
+            mobileSidebar.classList.remove('-translate-x-full');
+            sidebarOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileSidebar.classList.add('-translate-x-full');
+            sidebarOverlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuButton.addEventListener('click', openMobileMenu);
+        closeSidebar.addEventListener('click', closeMobileMenu);
+        sidebarOverlay.addEventListener('click', closeMobileMenu);
+
+        // Close mobile menu when clicking nav links
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Initialize Element SDK
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+    </script>
+ </body>
+</html>

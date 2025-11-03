@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Dawid Consulting - Occupational Health & Safety Experts</title>
+
+  <!-- Description & Keywords -->
+  <meta name="description" content="Learn more about Dawid Consulting (Pty) Ltd, a trusted Occupational Health & Safety consultancy based in East London. We are committed to creating safer workplaces through compliance, training, and expert risk management.">
+  <meta name="keywords" content="About Dawid Consulting, Occupational Health and Safety Experts, Workplace Safety Consultants, East London, OHS Training, Safety Compliance, South Africa">
+  <meta name="author" content="Dawid Consulting (Pty) Ltd">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#03A9F4">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yourdomain.co.za/about.html">
+
+  <!-- Favicon / Browser Tab Icons -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+  <link rel="shortcut icon" href="images/logo.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About Dawid Consulting - Occupational Health & Safety Experts">
+  <meta property="og:description" content="Discover Dawid Consulting’s mission to promote safe and compliant workplaces through expert OHS consulting and training.">
+  <meta property="og:image" content="https://yourdomain.co.za/images/hero1.jpg">
+  <meta property="og:url" content="https://yourdomain.co.za/about.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Dawid Consulting - OHS Experts">
+  <meta name="twitter:description" content="Learn about our professional Occupational Health & Safety consultancy services in South Africa.">
+  <meta name="twitter:image" content="https://yourdomain.co.za/images/hero1.jpg">
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #263238 0%, #03A9F4 100%);
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        /* Floating Particles */
+        @keyframes float-1 {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            25% { transform: translateY(-20px) translateX(10px); }
+            50% { transform: translateY(-10px) translateX(-15px); }
+            75% { transform: translateY(-30px) translateX(5px); }
+        }
+        
+        @keyframes float-2 {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            33% { transform: translateY(-15px) translateX(-10px); }
+            66% { transform: translateY(-25px) translateX(20px); }
+        }
+        
+        @keyframes float-3 {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(-40px) translateX(-20px); }
+        }
+        
+        .animate-float-1 { animation: float-1 6s ease-in-out infinite; }
+        .animate-float-2 { animation: float-2 8s ease-in-out infinite; }
+        .animate-float-3 { animation: float-3 10s ease-in-out infinite; }
+        
+        /* Content Slide Animations */
+        @keyframes slide-up {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-slide-up { animation: slide-up 1s ease-out; }
+        .animate-slide-up-delay-1 { animation: slide-up 1s ease-out 0.2s both; }
+        .animate-slide-up-delay-2 { animation: slide-up 1s ease-out 0.4s both; }
+        .animate-slide-up-delay-3 { animation: slide-up 1s ease-out 0.6s both; }
+        
+        /* Floating Shapes */
+        @keyframes float-slow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        @keyframes float-reverse {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(20px) rotate(-180deg); }
+        }
+        
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
+        .animate-float-reverse { animation: float-reverse 6s ease-in-out infinite; }
+        .animate-bounce-slow { animation: bounce-slow 4s ease-in-out infinite; }
+        
+        /* Expand Animation */
+        @keyframes expand {
+            from { width: 0; }
+            to { width: 6rem; }
+        }
+        
+        .animate-expand { animation: expand 1s ease-out 0.5s both; }
+        
+        /* Scroll Animation Observer */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Card hover effects */
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        /* Timeline styles */
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background: #3B82F6;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #3B82F6;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 0.4375rem;
+            top: 1.5rem;
+            width: 2px;
+            height: calc(100% - 1rem);
+            background: #E5E7EB;
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        
+        /* Stats counter animation */
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .stat-number {
+            animation: countUp 1s ease-out;
+        }
+        
+        /* Certification badges */
+        .cert-badge {
+            background: linear-gradient(135deg, #10B981, #059669);
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        }
+        
+        /* Service icons */
+        .service-icon {
+            background: linear-gradient(135deg, #3B82F6, #1D4ED8);
+            border-radius: 1rem;
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+        
+        /* Company info cards */
+        .info-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="scroll-smooth"><!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 shadow-lg backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <!-- Left: Logo -->
+      <div class="flex items-center">
+        <div class="flex-shrink-0 flex items-center">
+          <img src="images/logo.png" alt="Dawid Consulting Logo" style="height: 60px; width: auto;">
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-4">
+          <a href="index.html" class="text-white hover:text-blue-200 px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white hover:bg-opacity-10">Home</a>
+          <a href="#about" class="text-blue-200 bg-white bg-opacity-10 px-4 py-2 rounded-md text-sm font-medium">About</a>
+          <a href="services.html" class="text-white hover:text-blue-200 px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white hover:bg-opacity-10">Services</a>
+          <a href="contact.html" class="text-white hover:text-blue-200 px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white hover:bg-opacity-10">Contact</a>
+        </div>
+      </div>
+     <!-- Mobile menu button -->
+     <div class="md:hidden"><button id="mobile-menu-button" class="text-white hover:text-blue-200 focus:outline-none focus:text-blue-200 transition-colors duration-300">
+       <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg></button>
+     </div>
+    </div>
+   </div>
+  </nav><!-- Mobile Sidebar Menu -->
+  <div id="mobile-sidebar" class="fixed inset-y-0 left-0 z-50 w-64 bg-gradient-to-b from-gray-900 via-blue-900 to-gray-800 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+   <div class="flex items-center justify-between p-4 border-b border-white border-opacity-20">
+    <h2 class="text-lg font-semibold text-white">Menu</h2><button id="close-sidebar" class="text-white hover:text-blue-200 focus:outline-none transition-colors duration-300">
+     <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+     </svg></button>
+   </div>
+   <nav class="mt-8">
+    <div class="px-4 space-y-2"><a href="index.html" class="mobile-nav-link block px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 rounded-lg transition-all duration-300 transform hover:translate-x-2">
+      <div class="flex items-center">
+       <svg class="w-5 h-5 mr-3" fill="currentColor" viewbox="0 0 24 24"><path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" />
+       </svg> Home
+      </div></a> <a href="#about" class="mobile-nav-link block px-4 py-3 text-blue-200 bg-white bg-opacity-10 rounded-lg">
+      <div class="flex items-center">
+       <svg class="w-5 h-5 mr-3" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" />
+       </svg> About
+      </div></a> <a href="services.html" class="mobile-nav-link block px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 rounded-lg transition-all duration-300 transform hover:translate-x-2">
+      <div class="flex items-center">
+       <svg class="w-5 h-5 mr-3" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2L3.09 8.26L12 14L20.91 8.26L12 2ZM21 16V10L12 15L3 10V16L12 21L21 16Z" />
+       </svg> Services
+      </div></a> <a href="contact.html" class="mobile-nav-link block px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 rounded-lg transition-all duration-300 transform hover:translate-x-2">
+      <div class="flex items-center">
+       <svg class="w-5 h-5 mr-3" fill="currentColor" viewbox="0 0 24 24"><path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" />
+       </svg> Contact
+      </div></a>
+    </div>
+   </nav>
+  </div><!-- Sidebar Overlay -->
+  <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden md:hidden"></div><!-- Hero Section -->
+  <section id="home" class="relative h-96 overflow-hidden"><!-- Background -->
+   <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"></div>
+   <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('images/aaboutus.jpg')"></div><!-- Floating Particles -->
+   <div class="absolute inset-0 overflow-hidden">
+    <div class="particle absolute w-4 h-4 bg-blue-400 rounded-full opacity-30 animate-float-1" style="top: 20%; left: 10%;"></div>
+    <div class="particle absolute w-6 h-6 bg-red-400 rounded-full opacity-20 animate-float-2" style="top: 60%; right: 15%;"></div>
+    <div class="particle absolute w-3 h-3 bg-white rounded-full opacity-40 animate-float-3" style="bottom: 30%; left: 70%;"></div>
+   </div><!-- Content -->
+   <div class="relative z-10 h-full flex items-center justify-center text-white">
+    <div class="max-w-4xl mx-auto text-center px-4">
+     <div class="animate-slide-up">
+      <h1 id="page-title" class="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
+      <p id="page-subtitle" class="text-lg md:text-xl text-blue-100 mb-6">Leading experts in occupational health &amp; safety solutions</p><a href="#company-overview" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">Learn More</a>
+     </div>
+    </div>
+   </div>
+  </section><!-- Company Overview Section -->
+  <section id="company-overview" class="relative py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-gray-100 overflow-hidden"><!-- Floating Geometric Shapes -->
+   <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-float-slow"></div>
+    <div class="absolute top-40 right-20 w-16 h-16 bg-red-200 rotate-45 opacity-15 animate-float-reverse"></div>
+    <div class="absolute bottom-20 left-1/4 w-12 h-12 bg-blue-300 rounded-full opacity-25 animate-bounce-slow"></div>
+   </div>
+   <div class="relative z-10 max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16 animate-on-scroll">
+     <h2 class="text-4xl font-bold text-gray-800 mb-6">Company Overview</h2>
+     <div class="w-24 h-1 bg-red-600 mx-auto mb-8 animate-expand"></div>
+     <p id="company-description" class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">Dawid Consulting (Pty) Ltd is a premier occupational health and safety consulting firm dedicated to creating safer work environments across South Africa. With our expertise and commitment to excellence, we help organizations achieve compliance while fostering a culture of safety.</p>
+    </div><!-- Company Stats -->
+    <div class="grid md:grid-cols-4 gap-8 mb-16">
+     <div class="text-center animate-on-scroll hover-lift bg-white rounded-xl p-6 shadow-lg">
+      <div class="text-4xl font-bold text-blue-600 mb-2 stat-number">
+       2024
+      </div>
+      <p class="text-gray-600">Established</p>
+     </div>
+     <div class="text-center animate-on-scroll hover-lift bg-white rounded-xl p-6 shadow-lg" style="animation-delay: 0.1s">
+      <div class="text-4xl font-bold text-green-600 mb-2 stat-number">
+       100+
+      </div>
+      <p class="text-gray-600">Clients Served</p>
+     </div>
+     <div class="text-center animate-on-scroll hover-lift bg-white rounded-xl p-6 shadow-lg" style="animation-delay: 0.2s">
+      <div class="text-4xl font-bold text-red-600 mb-2 stat-number">
+       500+
+      </div>
+      <p class="text-gray-600">Safety Assessments</p>
+     </div>
+     <div class="text-center animate-on-scroll hover-lift bg-white rounded-xl p-6 shadow-lg" style="animation-delay: 0.3s">
+      <div class="text-4xl font-bold text-purple-600 mb-2 stat-number">
+       24/7
+      </div>
+      <p class="text-gray-600">Support Available</p>
+     </div>
+    </div><!-- Mission & Vision -->
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+     <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift animate-on-scroll">
+      <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2L3.09 8.26L12 14L20.91 8.26L12 2ZM21 16V10L12 15L3 10V16L12 21L21 16Z" />
+       </svg>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Our Mission</h3>
+      <p id="mission-statement" class="text-gray-600 leading-relaxed text-center">To provide comprehensive occupational health and safety solutions that protect workers, ensure regulatory compliance, and create sustainable safety cultures in workplaces across South Africa.</p>
+     </div>
+     <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift animate-on-scroll" style="animation-delay: 0.2s">
+      <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5S21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 17C9.24 17 7 14.76 7 12S9.24 7 12 7S17 9.24 17 12S14.76 17 12 17ZM12 9C10.34 9 9 10.34 9 12S10.34 15 12 15S15 13.66 15 12S13.66 9 12 9Z" />
+       </svg>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Our Vision</h3>
+      <p id="vision-statement" class="text-gray-600 leading-relaxed text-center">To be the leading occupational health and safety consulting firm in South Africa, recognized for our expertise, innovation, and unwavering commitment to workplace safety excellence.</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Company Information Section -->
+  <section class="py-20 bg-gradient-to-br from-white to-gray-50">
+   <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16 animate-on-scroll">
+     <h2 class="text-4xl font-bold text-gray-800 mb-6">Company Information</h2>
+     <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+     <p class="text-lg text-gray-600 max-w-3xl mx-auto">Officially registered and compliant with all South African business regulations</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8"><!-- Tax Information -->
+     <div class="info-card rounded-2xl p-8 hover-lift animate-on-scroll">
+      <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M11.5,1L2,6V8H21V6M16,10V17H19V19H2V17H5V10H7V17H9V10H11V17H13V10H15V17H16M2,21H19V23H2V21Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Tax Compliance</h3>
+      <div class="space-y-2 text-center">
+       <p class="text-gray-600"><strong>SARS Tax Number:</strong></p>
+       <p class="text-green-600 font-semibold">9809220198</p>
+       <p class="text-gray-600 text-sm">Fully compliant with SARS</p>
+      </div>
+     </div><!-- Company Type -->
+     <div class="info-card rounded-2xl p-8 hover-lift animate-on-scroll" style="animation-delay: 0.1s">
+      <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Business Structure</h3>
+      <div class="space-y-2 text-center">
+       <p class="text-gray-600"><strong>Entity Type:</strong></p>
+       <p class="text-purple-600 font-semibold">Private Company (Pty) Ltd</p>
+       <p class="text-gray-600 text-sm">Limited liability company</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Director Section -->
+  <section class="py-20 bg-gradient-to-br from-blue-50 to-white">
+   <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16 animate-on-scroll">
+     <h2 class="text-4xl font-bold text-gray-800 mb-6">Leadership</h2>
+     <div class="w-24 h-1 bg-red-600 mx-auto mb-8"></div>
+     <p class="text-lg text-gray-600 max-w-3xl mx-auto">Meet the experienced professional leading our commitment to workplace safety excellence</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-xl p-8 lg:p-12 animate-on-scroll">
+     <div class="text-center"><!-- Director Information -->
+      <div class="max-w-4xl mx-auto">
+       <h3 id="director-name" class="text-3xl font-bold text-gray-800 mb-2">Thabang Nkomo</h3>
+       <p class="text-blue-600 font-semibold text-xl mb-6">Founder &amp; Managing Director</p>
+       <div class="mb-8">
+        <p id="director-bio" class="text-gray-600 leading-relaxed text-lg mb-6">A seasoned professional with extensive experience in occupational health and safety management. Our director brings a wealth of knowledge in regulatory compliance, risk assessment, and safety training to ensure the highest standards of workplace safety for our clients.</p>
+       </div><!-- Director Qualifications -->
+       <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-gray-50 rounded-lg p-4">
+         <h4 class="font-semibold text-gray-800 mb-2">Expertise Areas</h4>
+         <ul class="text-gray-600 text-sm space-y-1">
+          <li>• Occupational Health &amp; Safety</li>
+          <li>• Risk Assessment &amp; Management</li>
+          <li>• Regulatory Compliance</li>
+          <li>• Safety Training &amp; Development</li>
+         </ul>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4">
+         <h4 class="font-semibold text-gray-800 mb-2">Industry Focus</h4>
+         <ul class="text-gray-600 text-sm space-y-1">
+          <li>• Manufacturing &amp; Industrial</li>
+          <li>• Construction &amp; Engineering</li>
+          <li>• Mining &amp; Resources</li>
+          <li>• Commercial &amp; Office Environments</li>
+         </ul>
+        </div>
+       </div><!-- Contact Director -->
+       <div class="flex flex-col sm:flex-row gap-4 justify-center"><a href="tel:0785673301" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+         <svg class="w-5 h-5 mr-2" fill="currentColor" viewbox="0 0 24 24"><path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" />
+         </svg> Call Director </a> <a href="mailto:info@davidconsulting.co.za" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+         <svg class="w-5 h-5 mr-2" fill="currentColor" viewbox="0 0 24 24"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" />
+         </svg> Send Email </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Services Overview -->
+  <section class="py-20 bg-gradient-to-br from-gray-100 to-white">
+   <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16 animate-on-scroll">
+     <h2 class="text-4xl font-bold text-gray-800 mb-6">Our Services</h2>
+     <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+     <p class="text-lg text-gray-600 max-w-3xl mx-auto">Comprehensive occupational health and safety solutions tailored to your industry needs</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Safety Assessments -->
+     <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift animate-on-scroll">
+      <div class="service-icon mx-auto">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M9,11H7V9H9V11M13,11H11V9H13V11M17,11H15V9H17V11M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19M19,6H5V5H19V6Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Safety Assessments</h3>
+      <p class="text-gray-600 text-center leading-relaxed">Comprehensive workplace safety evaluations to identify risks and ensure compliance with occupational health standards.</p>
+     </div><!-- Training Programs -->
+     <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift animate-on-scroll" style="animation-delay: 0.1s">
+      <div class="service-icon mx-auto">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Training Programs</h3>
+      <p class="text-gray-600 text-center leading-relaxed">Customized safety training programs designed to educate employees and create a culture of workplace safety awareness.</p>
+     </div><!-- Compliance Management -->
+     <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift animate-on-scroll md:col-span-2 lg:col-span-1" style="animation-delay: 0.2s">
+      <div class="service-icon mx-auto">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Compliance Management</h3>
+      <p class="text-gray-600 text-center leading-relaxed">Expert guidance on regulatory compliance to ensure your organization meets all occupational health and safety requirements.</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Why Choose Us -->
+  <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+   <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16 animate-on-scroll">
+     <h2 class="text-4xl font-bold mb-6">Why Choose Dawid Consulting?</h2>
+     <div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+     <p class="text-lg text-blue-100 max-w-3xl mx-auto">We combine expertise, dedication, and innovation to deliver exceptional occupational health and safety solutions</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+     <div class="text-center animate-on-scroll">
+      <div class="cert-badge">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold mb-2">Expert Knowledge</h3>
+      <p class="text-blue-100">Deep understanding of South African occupational health and safety regulations</p>
+     </div>
+     <div class="text-center animate-on-scroll" style="animation-delay: 0.1s">
+      <div class="cert-badge">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12,1L9,9L1,12L9,15L12,23L15,15L23,12L15,9L12,1Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold mb-2">Tailored Solutions</h3>
+      <p class="text-blue-100">Customized approaches designed specifically for your industry and workplace</p>
+     </div>
+     <div class="text-center animate-on-scroll" style="animation-delay: 0.2s">
+      <div class="cert-badge">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold mb-2">Proven Results</h3>
+      <p class="text-blue-100">Track record of successful safety implementations and compliance achievements</p>
+     </div>
+     <div class="text-center animate-on-scroll" style="animation-delay: 0.3s">
+      <div class="cert-badge">
+       <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12,2C13.1,2 14,2.9 14,4C14,5.1 13.1,6 12,6C10.9,6 10,5.1 10,4C10,2.9 10.9,2 12,2M21,9V7L15,1H5C3.89,1 3,1.89 3,3V21A2,2 0 0,0 5,23H19A2,2 0 0,0 21,21V9M19,9H14V4H5V21H19V9Z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold mb-2">Ongoing Support</h3>
+      <p class="text-blue-100">Continuous support and guidance to maintain safety standards and compliance</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Call to Action -->
+  <section class="py-20 bg-gradient-to-br from-gray-50 to-white">
+   <div class="max-w-4xl mx-auto px-4 text-center">
+    <div class="animate-on-scroll">
+     <h2 class="text-4xl font-bold text-gray-800 mb-6">Ready to Enhance Your Workplace Safety?</h2>
+     <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Contact Dawid Consulting today to discuss how we can help create a safer work environment for your organization.</p>
+     <div class="flex flex-col sm:flex-row gap-4 justify-center"><a href="tel:0785673301" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center">
+       <svg class="w-5 h-5 mr-2" fill="currentColor" viewbox="0 0 24 24"><path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" />
+       </svg> Call Now </a> <a href="mailto:info@davidconsulting.co.za" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center">
+       <svg class="w-5 h-5 mr-2" fill="currentColor" viewbox="0 0 24 24"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" />
+       </svg> Send Email </a>
+     </div>
+    </div>
+   </div>
+  </section><!-- Footer -->
+  <footer class="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-800 text-white py-12">
+   <div class="max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-4 gap-8">
+      <div>
+      <h3 class="text-2xl font-bold mb-4">Dawid Consulting (Pty) Ltd</h3>
+      <p class="text-gray-300 mb-4">Your trusted partner in occupational health and safety. Creating safer work environments for a better tomorrow.</p>
+      <div class="flex space-x-4"><a href="tel:0785673301" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" />
+        </svg></a> <a href="mailto:info@davidconsulting.co.za" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" />
+        </svg></a> <a href="https://wa.me/27785673301" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488" />
+        </svg></a>
+      </div>
+     </div>
+     <div>
+      <h4 class="text-lg font-semibold mb-4">Services</h4>
+      <ul class="space-y-2 text-gray-300">
+       <li>Risk Assessment</li>
+       <li>Safety Planning</li>
+       <li>Training Programs</li>
+       <li>Site Auditing</li>
+       <li>PPE Supply</li>
+      </ul>
+     </div>
+          <div>
+      <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+       <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+       <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+       <li><a href="services.html" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+       <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="text-xl font-semibold mb-4">Contact Info</h4>
+      <div class="space-y-2 text-gray-300">
+       <p>📞 078 567 3301</p>
+       <p>✉️ info@davidconsulting.co.za</p>
+       <p>📍 11 Bellavista Avenue Cambridge</p>
+       <p>🕒 Mon-Fri: 8AM-5PM</p>
+      </div>
+     </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+     <p class="text-gray-400">© 2024 Dawid Consulting (Pty) Ltd. All rights reserved.</p>
+    </div>
+   </div>
+  </footer>
+  <script>
+        // Default configuration
+        const defaultConfig = {
+            company_name: "Dawid Consulting (Pty) Ltd",
+            page_title: "About Us",
+            page_subtitle: "Leading experts in occupational health & safety solutions",
+            company_description: "Dawid Consulting (Pty) Ltd is a premier occupational health and safety consulting firm dedicated to creating safer work environments across South Africa. With our expertise and commitment to excellence, we help organizations achieve compliance while fostering a culture of safety.",
+            mission_statement: "To provide comprehensive occupational health and safety solutions that protect workers, ensure regulatory compliance, and create sustainable safety cultures in workplaces across South Africa.",
+            vision_statement: "To be the leading occupational health and safety consulting firm in South Africa, recognized for our expertise, innovation, and unwavering commitment to workplace safety excellence.",
+            director_name: "Thabang Nkomo",
+            director_bio: "A seasoned professional with extensive experience in occupational health and safety management. Our director brings a wealth of knowledge in regulatory compliance, risk assessment, and safety training to ensure the highest standards of workplace safety for our clients."
+        };
+
+        // Element SDK Configuration
+        async function onConfigChange(config) {
+            // Update navigation company name
+            const navCompanyName = document.getElementById('nav-company-name');
+            if (navCompanyName) {
+                navCompanyName.textContent = config.company_name || defaultConfig.company_name;
+            }
+
+            // Update page title and subtitle
+            const pageTitle = document.getElementById('page-title');
+            if (pageTitle) {
+                pageTitle.textContent = config.page_title || defaultConfig.page_title;
+            }
+
+            const pageSubtitle = document.getElementById('page-subtitle');
+            if (pageSubtitle) {
+                pageSubtitle.textContent = config.page_subtitle || defaultConfig.page_subtitle;
+            }
+
+            // Update company description
+            const companyDescription = document.getElementById('company-description');
+            if (companyDescription) {
+                companyDescription.textContent = config.company_description || defaultConfig.company_description;
+            }
+
+            // Update mission statement
+            const missionStatement = document.getElementById('mission-statement');
+            if (missionStatement) {
+                missionStatement.textContent = config.mission_statement || defaultConfig.mission_statement;
+            }
+
+            // Update vision statement
+            const visionStatement = document.getElementById('vision-statement');
+            if (visionStatement) {
+                visionStatement.textContent = config.vision_statement || defaultConfig.vision_statement;
+            }
+
+            // Update director information
+            const directorName = document.getElementById('director-name');
+            if (directorName) {
+                directorName.textContent = config.director_name || defaultConfig.director_name;
+            }
+
+            const directorBio = document.getElementById('director-bio');
+            if (directorBio) {
+                directorBio.textContent = config.director_bio || defaultConfig.director_bio;
+            }
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [],
+                borderables: [],
+                fontEditable: undefined,
+                fontSizeable: undefined
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["company_name", config.company_name || defaultConfig.company_name],
+                ["page_title", config.page_title || defaultConfig.page_title],
+                ["page_subtitle", config.page_subtitle || defaultConfig.page_subtitle],
+                ["company_description", config.company_description || defaultConfig.company_description],
+                ["mission_statement", config.mission_statement || defaultConfig.mission_statement],
+                ["vision_statement", config.vision_statement || defaultConfig.vision_statement],
+                ["director_name", config.director_name || defaultConfig.director_name],
+                ["director_bio", config.director_bio || defaultConfig.director_bio]
+            ]);
+        }
+
+        // Initialize Element SDK
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileSidebar = document.getElementById('mobile-sidebar');
+        const closeSidebar = document.getElementById('close-sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+        function openSidebar() {
+            mobileSidebar.classList.remove('-translate-x-full');
+            sidebarOverlay.classList.remove('hidden');
+        }
+
+        function closeSidebarMenu() {
+            mobileSidebar.classList.add('-translate-x-full');
+            sidebarOverlay.classList.add('hidden');
+        }
+
+        mobileMenuButton.addEventListener('click', openSidebar);
+        closeSidebar.addEventListener('click', closeSidebarMenu);
+        sidebarOverlay.addEventListener('click', closeSidebarMenu);
+
+        // Close sidebar when clicking on nav links
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', closeSidebarMenu);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Particle positioning
+        document.addEventListener('DOMContentLoaded', function() {
+            const particles = document.querySelectorAll('.particle');
+            particles.forEach((particle, index) => {
+                const randomTop = Math.random() * 80 + 10;
+                const randomLeft = Math.random() * 80 + 10;
+                particle.style.top = randomTop + '%';
+                particle.style.left = randomLeft + '%';
+            });
+        });
+    </script>
+ </body>
+</html>
